@@ -26,17 +26,17 @@ Free delivery on orders over £50.00 (inclusive)
 
 ## Interface
 
-Implement a `UnidaysDiscountChallenge` class with two public methods.
+Implement a `Discount_Classes.UnidaysDiscountChallenge` class with two public methods.
 
 1. `AddToBasket` - Pass in an item
 2. `CalculateTotalPrice` - Calculate and return the total price, result should include the following
     - `Total` - Total price of all items after applying any discounts
     - `DeliveryCharge` - The delivery charge for the order
 
-It should be possible to initialise your `UnidaysDiscountChallenge` class with the pricing rules. The example below shows how the interface might be used.
+It should be possible to initialise your `Discount_Classes.UnidaysDiscountChallenge` class with the pricing rules. The example below shows how the interface might be used.
 
 ```
-example = new UnidaysDiscountChallenge(pricingRules);
+example = new Discount_Classes.UnidaysDiscountChallenge(pricingRules);
 
 example.AddToBasket(itemOne);
 example.AddToBasket(itemTwo);
