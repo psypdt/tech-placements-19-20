@@ -61,5 +61,4 @@ public class ShoppingItemTest extends ShoppingItem
             assertFalse(itemU.getItemType() == alph[i]);
         }
     }
-
 }
