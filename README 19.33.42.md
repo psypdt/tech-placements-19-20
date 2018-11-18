@@ -93,3 +93,11 @@ Testing: `JUnit4`
 
 IDE: `IntelliJ, July 24th 2018, 2018.2 Build`
 
+
+## Approaching the problem
+
+I approached this problem with an OO mindset, first of all I read through the problem and highlited what actors partake in this task. 
+ - `ShoppingBasket`: This can be a class that is responsible for keeping track of it's items
+ - `ShoppingItems`: This can also be a class, whos responsibility it is to set up what an `Item` actually is
+ 
+After having found the 2 major classes that I will be working with, I started to wonder how these two classes would interact. This entailed that I establish the properties of the two classes. I knew that the `ShoppingItems` class would have to keep creating objects multiple times, but that was not the case for the `ShoppingBasket` class, hence why I opted to make `ShoppingBasket` a singleton.
