@@ -90,7 +90,7 @@ public class ShoppingBasketTest extends ShoppingItem
 
         myB.addToBasket(item1);
 
-        System.out.println("A " + myB.CalculateTotalPrice());
+        System.out.println("A");
         result = myB.CalculateTotalPrice();
 
         assertEquals(result.totalPrice, 8.00, 0.0);
@@ -109,7 +109,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item1);
         myB.addToBasket(item2);
 
-        System.out.println("2A " + myB.CalculateTotalPrice());
+        System.out.println("2A");
 
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 16.00, 0.0);
@@ -130,7 +130,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item2);
         myB.addToBasket(item3);
 
-        System.out.println("3A " + myB.CalculateTotalPrice());
+        System.out.println("3A");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 24.00, 0.0);
 
@@ -147,7 +147,7 @@ public class ShoppingBasketTest extends ShoppingItem
 
         myB.addToBasket(item1);
 
-        System.out.println("B " + myB.CalculateTotalPrice());
+        System.out.println("B");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 12.00, 0.0);
 
@@ -165,7 +165,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item1);
         myB.addToBasket(item2);
 
-        System.out.println("2B " + myB.CalculateTotalPrice());
+        System.out.println("2B");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 20.00, 0.0);
 
@@ -185,7 +185,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item2);
         myB.addToBasket(item3);
 
-        System.out.println("3B " + myB.CalculateTotalPrice());
+        System.out.println("3B");
 
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 20.00 + 12.00, 0.0);
@@ -204,7 +204,7 @@ public class ShoppingBasketTest extends ShoppingItem
 
         myB.addToBasket(item1);
 
-        System.out.println("C " + myB.CalculateTotalPrice());
+        System.out.println("C");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 4.00, 0.0);
 
@@ -222,7 +222,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item1);
         myB.addToBasket(item2);
 
-        System.out.println("2C " + myB.CalculateTotalPrice());
+        System.out.println("2C");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 8.00, 0.0);
 
@@ -243,7 +243,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item2);
         myB.addToBasket(item3);
 
-        System.out.println("3C " + myB.CalculateTotalPrice());
+        System.out.println("3C");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 10.00, 0.0);
 
@@ -260,7 +260,7 @@ public class ShoppingBasketTest extends ShoppingItem
 
         myB.addToBasket(item1);
 
-        System.out.println("D " + myB.CalculateTotalPrice());
+        System.out.println("D");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 7.00, 0.0);
 
@@ -278,7 +278,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item1);
         myB.addToBasket(item2);
 
-        System.out.println("2D " + myB.CalculateTotalPrice());
+        System.out.println("2D");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 7.00, 0.0);
 
@@ -299,7 +299,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item2);
         myB.addToBasket(item3);
 
-        System.out.println("3D " + myB.CalculateTotalPrice());
+        System.out.println("3D");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 7.00 + 7.00, 0.0);
 
@@ -317,7 +317,7 @@ public class ShoppingBasketTest extends ShoppingItem
 
         myB.addToBasket(item1);
 
-        System.out.println("E " + myB.CalculateTotalPrice());
+        System.out.println("E");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 5.00, 0.0);
 
@@ -335,7 +335,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item1);
         myB.addToBasket(item2);
 
-        System.out.println("2E " + myB.CalculateTotalPrice());
+        System.out.println("2E");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 10.00, 0.0);
 
@@ -356,7 +356,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item2);
         myB.addToBasket(item3);
 
-        System.out.println("3E " + myB.CalculateTotalPrice());
+        System.out.println("3E");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 10.00, 0.0);
 
@@ -379,7 +379,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item3);
         myB.addToBasket(item4);
 
-        System.out.println("4E " + myB.CalculateTotalPrice());
+        System.out.println("4E");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 10.00 + 5.00, 0.0);
 
@@ -423,7 +423,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item13);
         myB.addToBasket(item14);
 
-
+        System.out.println("14D");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 49.00, 0.0);
 
@@ -452,7 +452,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item6);
         myB.addToBasket(item7);
 
-
+        System.out.println("4B_3C");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 50.00, 0.0);
 
@@ -487,7 +487,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item9);
         myB.addToBasket(item10);
 
-        System.out.println("14D " + myB.CalculateTotalPrice());
+        System.out.println("A_2B_3C_2D_2E");
         result = myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 55.00, 0.0);
 
@@ -521,6 +521,7 @@ public class ShoppingBasketTest extends ShoppingItem
         myB.addToBasket(item9);
         myB.addToBasket(item10);
 
+        System.out.println("E_D_C_B_A_E_D_C_B_C");
         result =  myB.CalculateTotalPrice();
         assertEquals(result.totalPrice, 55.00, 0.0);
 

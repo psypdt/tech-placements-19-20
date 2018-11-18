@@ -1,8 +1,7 @@
 package Discount_Tests;
 
-import Discount_Classes.ShoppingBasket;
+
 import Discount_Classes.ShoppingItem;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -49,7 +48,7 @@ public class ShoppingItemTest extends ShoppingItem
         }
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void test_item_input_wrong_type()
     {
         String alph[] ={"F", "G", "H", "I", "J"};
@@ -58,7 +57,6 @@ public class ShoppingItemTest extends ShoppingItem
         for(i = 0; i < 5; i++)
         {
             ShoppingItem itemU = new ShoppingItem(alph[i], i);
-            assertFalse(itemU.getItemType() == alph[i]);
         }
     }
 }

@@ -52,15 +52,16 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
     }
 
     @Override
-    public MyResult CalculateTotalPrice()
+    public MyResult CalculateTotalPrice() throws IllegalArgumentException
     {
         int typeOccurrance = 0;
         double totalItemPrice = 0.00; /*After discount*/
         MyResult total = new MyResult();
 
+        /*Throw exception if basket is empty*/
         if(this.items.isEmpty())
         {
-            System.exit(-1);
+            throw new IllegalArgumentException();
         }
 
         if(this.items.size() == 1)

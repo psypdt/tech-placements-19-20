@@ -17,18 +17,19 @@ public class ShoppingItem
         this.delivery = 7.00;
     }
 
-    public ShoppingItem(String iType, double iPrice)
+    public ShoppingItem(String iType, double iPrice) throws IllegalArgumentException
     {
         for(int i = 0; i < knowntypes.length; i++)
         {
-            if(iType == knowntypes[i])
+            if(iType.equals(knowntypes[i]))
             {
                 this.itemType = iType;
                 break;
             }
-            else if(i == knowntypes.length && iType != knowntypes[i])
+            else if(!iType.equals(knowntypes[i]) && i == knowntypes.length-1)
             {
                 System.out.println("Error: Item of type '" + iType + "' is unknown.");
+                throw new IllegalArgumentException();
             }
         }
 
