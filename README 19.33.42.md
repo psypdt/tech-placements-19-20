@@ -80,3 +80,16 @@ You should provide a copy of your code and include a readme detailing how to run
 Please supply us with the URL to your solution as part of your application - you may choose to host your solution however you like, so long as we are able to access it.
 
 We're not too fussy about what platform your program runs on, but we do require that we're able to build and run your code ourselves.
+
+
+## Runable
+
+Inside the src folder there is a .jar that can be run. Download the .jar file, move it into a directory that can be accessed via the command line. Run the .jar using the command ```java -jar jarFile.jar ```
+
+## Java Version
+Built with: `Java 10.0.2`
+
+Testing: `JUnit4`
+
+IDE: `IntelliJ, July 24th 2018, 2018.2 Build`
+
