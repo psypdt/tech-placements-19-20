@@ -12,6 +12,11 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
     private static ShoppingBasket single_instance = null;
     private ArrayList<ShoppingItem>items;
 
+    public class MyResult
+    {
+        public double totalPrice = 0.00;
+        public double deliveryCharge = 0.00;
+    }
 
     public ShoppingBasket()
     {
@@ -47,19 +52,22 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
     }
 
     @Override
-    public double CalculateTotalPrice()
+    public MyResult CalculateTotalPrice()
     {
         int typeOccurrance = 0;
         double totalItemPrice = 0.00; /*After discount*/
+        MyResult total = new MyResult();
 
         if(this.items.isEmpty())
         {
-            return 0;
+            System.exit(-1);
         }
 
         if(this.items.size() == 1)
         {
-            return items.get(0).getDelivery() + items.get(0).getItemPrice();
+            total.deliveryCharge = items.get(0).getDelivery();
+            total.totalPrice = items.get(0).getItemPrice();
+            return total;
         }
 
         sortItemAlph();
@@ -152,10 +160,15 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
 
         if(totalItemPrice >= 50)
         {
-            return totalItemPrice;
+            total.deliveryCharge = 0;
+            total.totalPrice = totalItemPrice;
+            return total;
         }
 
-        return items.get(0).getDelivery() + totalItemPrice;
+        total.deliveryCharge = 7.00;
+        total.totalPrice = totalItemPrice;
+
+        return total;
     }
 
 
