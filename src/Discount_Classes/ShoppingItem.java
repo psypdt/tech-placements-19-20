@@ -9,7 +9,7 @@ public class ShoppingItem
     private double delivery;
     public String knowntypes[] = {"A", "B", "C", "D", "E"};
 
-    /*Default constructor if no arguments are passed*/
+    /*Default constructor if no arguments are passed */
     public ShoppingItem()
     {
         this.itemType = "A";
