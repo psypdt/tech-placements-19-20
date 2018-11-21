@@ -3,9 +3,25 @@ UNiDAYS Discounts Programming Challenge
 
 
 
-## Runable
+## Running the .jar
 
+#### Run the .jar directly:
 Inside the src folder there is a .jar that can be run. Download the .jar file, move it into a directory that can be accessed via the command line. Run the .jar using the command ```java -jar jarFile.jar ``` on a UNIX or LINUX shell (Works the same way on MacOS).
+
+
+#### Alternatively:
+If the .jar doesn't run then please follow the following steps:
+
+- Download this project (You may exclude the README and .gitignore files if you wish)
+- Create a new java project in IntelliJ (prefferably, but eclipse should work as well)
+- You can now import the source folder
+- You can run the Main class (Make sure that you are using Java 10 for this project), or alternatively you can compile the project
+- Should you want to run the JUnit tests, please ensure that you have JUnit 4 installed
+
+
+###### Please note that this is a ```command line application```
+
+
 
 ## Java Version
 Built on: `Java 10.0.2`
