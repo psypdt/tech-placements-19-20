@@ -84,15 +84,16 @@ We're not too fussy about what platform your program runs on, but we do require 
 
 ## Runable
 
-Inside the src folder there is a .jar that can be run. Download the .jar file, move it into a directory that can be accessed via the command line. Run the .jar using the command ```java -jar jarFile.jar ```
+Inside the src folder there is a .jar that can be run. Download the .jar file, move it into a directory that can be accessed via the command line. Run the .jar using the command ```java -jar jarFile.jar ``` on a UNIX or LINUX shell (Works the same way on MacOS).
 
 ## Java Version
-Built with: `Java 10.0.2`
+Built on: `Java 10.0.2`
 
-Testing: `JUnit4`
+Testing dependency: `JUnit4`
 
 IDE: `IntelliJ, July 24th 2018, 2018.2 Build`
 
+JAR: The .jar was compiled on a `Macbook running High Sierra 10.13.6`
 
 ## Approaching the problem
 
