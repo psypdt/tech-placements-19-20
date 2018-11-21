@@ -27,4 +27,4 @@ I knew that the `ShoppingItems` class would have to keep creating objects multip
 
 I decided to take a test driven approach which entailed that I create an extensive set of unit tests which must be passed. After writing my unit tests I started to work on the classes, running the tests every time a feature was developed and amended. 
 
-The reason for this approach was mainly due to the fact that using a test driven approach would help me find out where and why my program is failing, before moving on to a new part. Hence allowing to establish total correctness before moving on to a new feature of the code.
+The reason why I did this was mainly due to the fact that using a test driven approach would make it a lot easier to find out where and why my program is failing, before moving onto a new part. Hence allowing me to establish total correctness before moving on to a new feature of the code.
