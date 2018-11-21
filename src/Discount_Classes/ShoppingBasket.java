@@ -6,7 +6,7 @@ import java.util.ArrayList;
  */
 
 
-/*This should be a singleton*/
+/*This should be a singleton because we want one centralized basket where all items will be placed*/
 public final class ShoppingBasket implements UnidaysDiscountChallenge
 {
     private static ShoppingBasket single_instance = null;
@@ -64,6 +64,7 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
             throw new IllegalArgumentException();
         }
 
+        /*Return single element*/
         if(this.items.size() == 1)
         {
             total.deliveryCharge = items.get(0).getDelivery();
@@ -73,6 +74,7 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
 
         sortItemAlph();
 
+        /*Rule set that will decide if a discount will be issued*/
         for(int i = 0; i < items.size(); i++)
         {
             if(items.get(i).getItemType().equals("A"))
@@ -87,8 +89,7 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
                     totalItemPrice += 20.00;
                     typeOccurrance = 0; /*Reset #B's encountered*/
                 }
-                else if(i + 1 < items.size() && !items.get(i + 1).getItemType().equals("B")
-                        && typeOccurrance < 2)
+                else if(i + 1 < items.size() && !items.get(i + 1).getItemType().equals("B") && typeOccurrance < 2)
                 {
                     totalItemPrice += items.get(i).getItemPrice();
                     typeOccurrance = 0;
@@ -96,7 +97,6 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
                 else if(i + 1 == items.size())
                 {
                     totalItemPrice += items.get(i).getItemPrice();
-                    /*End For loop*/
                 }
             }
             else if(this.items.get(i).getItemType().equals("C"))
@@ -116,7 +116,6 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
                 {
                     totalItemPrice += typeOccurrance * items.get(i).getItemPrice();
                     typeOccurrance = 0;
-                    /*End For loop*/
                 }
             }
             else if(items.get(i).getItemType().equals("D"))
@@ -159,6 +158,7 @@ public final class ShoppingBasket implements UnidaysDiscountChallenge
             }
         }
 
+        /*Decide if delivery is free*/
         if(totalItemPrice >= 50)
         {
             total.deliveryCharge = 0;

@@ -9,7 +9,7 @@ public class ShoppingItem
     private double delivery;
     public String knowntypes[] = {"A", "B", "C", "D", "E"};
 
-
+    /*Default constructor if no arguments are passed*/
     public ShoppingItem()
     {
         this.itemType = "A";
@@ -17,15 +17,18 @@ public class ShoppingItem
         this.delivery = 7.00;
     }
 
+    /*Constructor for arguments getting passed in, allow this to throw exception if illegal argument is passed*/
     public ShoppingItem(String iType, double iPrice) throws IllegalArgumentException
     {
         for(int i = 0; i < knowntypes.length; i++)
         {
+            /*Ensure that a known item type is passed into the constructor*/
             if(iType.equals(knowntypes[i]))
             {
                 this.itemType = iType;
                 break;
             }
+            /*Throw exception if illegal argument is passed*/
             else if(!iType.equals(knowntypes[i]) && i == knowntypes.length-1)
             {
                 System.out.println("Error: Item of type '" + iType + "' is unknown.");
